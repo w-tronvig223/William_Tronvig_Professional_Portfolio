@@ -2,18 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=scale=1">
     <title>William Tronvig Professional Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="icon" type="image/icons" href -->
 </head>
 <body>
+    <div id="profilepic">
+        <img src="images/profilepic.jpg" alt="Picture of William"/> <!--Need to proportion correctly so that sizing works on all screens-->
+    </div>
+    <header>
+        <h1 id="slide1">William Tronvig</h1> <!--Have these slide in from the left one at a time on page open-->
+            <ul>
+                <li><h2 id="slide2">Entrepreneur</h2></li> <!--Add in clickable icons?-->
+                <li><h2 id="slide3">Student</h2></li>
+                <li><h2 id="slide4">Developer</h2></li>
+                <li><h2 id="slide5">Inventor</h2></li>
+            </ul>
+    </header>
+    
+    <nav id="menu">
+        <span class = "icon-menu"></span><!--Add in the icon menu here for navigation throughout page-->
+    </nav>
     <main> 
-        <div id="project1" onclick="takesUserToProject"></div>
-        <div id="project2" onclick="takesUserToProject"></div>
-        <div id="project3" onclick="takesUserToProject"></div>
-        <div id="project4" onclick="takesUserToProject"></div>
-        <div id="aboutMe" onclick="takesUserToAboutMePage"></div>
-        <div class="lines"></div>
+        <article>
+            <h3>A little info about William...</h3>
+                <h2>History</h2>
+                <p>
+                These are the voyages of the Starship Enterprise. Its continuing mission, to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no one has gone before. We need to neutralize the homing signal. Each unit has total environmental control, gravity, temperature, atmosphere, light, in a protective field. Sensors show energy readings in your area. We had a forced chamber explosion in the resonator coil. Field strength has increased by 3,000 percent.
+                </p>
+                <h2>Relevant Experience</h2>
+                <p>
+                Run a manual sweep of anomalous airborne or electromagnetic readings. Radiation levels in our atmosphere have increased by 3,000 percent. Electromagnetic and subspace wave fronts approaching synchronization. What is the strength of the ship's deflector shields at maximum output? The wormhole's size and short period would make this a local phenomenon. Do you have sufficient data to compile a holographic simulation?
+                </p>
+                <h2>Goals and Interests</h2>
+                <p>
+                I have reset the sensors to scan for frequencies outside the usual range. By emitting harmonic vibrations to shatter the lattices. We will monitor and adjust the frequency of the resonators. He has this ability of instantly interpreting and extrapolating any verbal communication he hears. It may be due to the envelope over the structure, causing hydrogen-carbon helix patterns throughout. I'm comparing the molecular integrity of that bubble against our phasers.
+                </p>
+                
+                <p>
+                Sensors indicate no shuttle or other ships in this sector. According to coordinates, we have travelled 7,000 light years and are located near the system J-25. Tractor beam released, sir. Force field maintaining our hull integrity. Damage report? Sections 27, 28 and 29 on decks four, five and six destroyed. Without our shields, at this range it is probable a photon detonation could destroy the Enterprise.
+                </p>
+                
+                <p>
+                Resistance is futile.
+                </p>
+        </article>
+        <aside>
+            <div id="project1" onclick="takesUserToProject"></div>
+            <div id="project2" onclick="takesUserToProject"></div>
+            <div id="project3" onclick="takesUserToProject"></div>
+            <div id="project4" onclick="takesUserToProject"></div>
+            <div id="aboutMe" onclick="takesUserToAboutMePage"></div>
+        </aside>
     </main>
+    <footer><!--Add in icons here for links to other pages, links to patents, etc.--></footer>
 </body>
 </html>
-
