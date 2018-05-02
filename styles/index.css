@@ -72,11 +72,10 @@ p {
 }
 
 .container {
-    width: 800px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     position: relative;
     perspective: 1000px;
-    margin: 30px;
   }
   
   #cube {
@@ -87,12 +86,13 @@ p {
   }
   
   #cube figure {
-    margin: 0;
-    width: 200px;
-    height: 200px;
+    /* margin: 0; */
+    width: 120px;
+    height: 120px;
     display: block;
     position: absolute;
-    border: 2px solid black;
+    border: 6px solid black;
+    background-color: rgba(180, 147, 211, 0.153);
   }
 
 #cube .front  { transform: rotateY(   0deg ); }
@@ -102,19 +102,22 @@ p {
 #cube .top    { transform: rotateX(  90deg ); }
 #cube .bottom { transform: rotateX( -90deg ); }
 
-#cube .front  { transform: rotateY(   0deg ) translateZ( 100px ); }
-#cube .back   { transform: rotateX( 180deg ) translateZ( 100px ); }
-#cube .right  { transform: rotateY(  90deg ) translateZ( 100px ); }
-#cube .left   { transform: rotateY( -90deg ) translateZ( 100px ); }
-#cube .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
-#cube .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
-#cube { transform: translateZ( -100px ); }
-#cube.show-front  { transform: translateZ( -100px ) rotateY(    0deg ); }
-#cube.show-back   { transform: translateZ( -100px ) rotateX( -180deg ); }
-#cube.show-right  { transform: translateZ( -100px ) rotateY(  -90deg ); }
-#cube.show-left   { transform: translateZ( -100px ) rotateY(   90deg ); }
-#cube.show-top    { transform: translateZ( -100px ) rotateX(  -90deg ); }
-#cube.show-bottom { transform: translateZ( -100px ) rotateX(   90deg ); }
+#cube .front  { transform: rotateY(   0deg ) translateZ( 50px ); }
+#cube .back   { transform: rotateX( 180deg ) translateZ( 50px ); }
+#cube .right  { transform: rotateY(  90deg ) translateZ( 50px ); }
+#cube .left   { transform: rotateY( -90deg ) translateZ( 50px ); }
+#cube .top    { transform: rotateX(  90deg ) translateZ( 50px ); }
+#cube .bottom { transform: rotateX( -90deg ) translateZ( 50px ); }
+
+#cube { transform: translateZ( -50px ); }
+
+#cube.show-front  { transform: translateZ( -50px ) rotateY(    0deg ); }
+#cube.show-back   { transform: translateZ( -50px ) rotateX( -180deg ); }
+#cube.show-right  { transform: translateZ( -50px ) rotateY(  -90deg ); }
+#cube.show-left   { transform: translateZ( -50px ) rotateY(   90deg ); }
+#cube.show-top    { transform: translateZ( -50px ) rotateX(  -90deg ); }
+#cube.show-bottom { transform: translateZ( -50px ) rotateX(   90deg ); }
+
 #cube { transition: transform 1s; }
 
 /*Put this code in here from CSS tricks just to get an idea on my page of what I'm going for.*/
