@@ -107,7 +107,7 @@
     animation: come-in 3s ease forwards;
   }
   .come-in:nth-child {
-    animation-duration: 3s; /* So they look staggered */
+    animation-duration: 3s; 
   }
   
   @keyframes come-in {

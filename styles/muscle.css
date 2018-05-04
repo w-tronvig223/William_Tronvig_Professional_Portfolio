@@ -67,15 +67,11 @@ p {
     float: right;
 }
 
-.divholder {
-    display: flex;
-}
-
 .container {
-    width: 120px;
-    height: 120px;
+    width: 196px;
+    height: 196px;
     position: relative;
-    perspective: 1000px;
+    /* perspective: 1000px; */
   }
   
   #cube {
@@ -91,7 +87,8 @@ p {
     height: 120px;
     display: block;
     position: absolute;
-    border: 6px solid black;
+    border: 3px solid black;
+    border-radius: 10px;
     background-color: rgba(180, 147, 211, 0.153);
   }
 
@@ -121,3 +118,10 @@ p {
 #cube { transition: transform 1s; }
 
 /*Put this code in here from CSS tricks just to get an idea on my page of what I'm going for.*/
+
+.containerholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}

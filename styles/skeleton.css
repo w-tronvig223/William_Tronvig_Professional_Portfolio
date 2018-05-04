@@ -8,9 +8,8 @@ html {
 
   Change to super small value for css lasershow
 $perspective: 
-  600
+  800
   ;
-
 
 body {background: black;
   //-webkit-animation: hue 2s infinite linear;
@@ -18,12 +17,11 @@ body {background: black;
 }
 
 .container {
-  margin: 15% auto;
+  margin: 10% auto;
   width: 200px;
   height: 200px;
   -webkit-transform-style: preserve-3d;
-  -webkit-animation: rotation 7s infinite linear;
-  
+  -webkit-animation: rotation 4s infinite;
 }
 
 .layer {
@@ -35,12 +33,12 @@ body {background: black;
   -webkit-animation: hue 2s infinite linear;
 }
 
-@for $i from 1 to 5 {
+/* @for $i from 1 to 5 {
     .div-#{$i} {
         -webkit-animation-delay: $i/10+s;
         -webkit-transform: translateZ( $i*50+px );
     }
-}
+} */
 
 
 @-webkit-keyframes rotation {
@@ -49,7 +47,8 @@ body {background: black;
 }
 
 
-@-webkit-keyframes hue {
+/* @-webkit-keyframes hue {
   from { -webkit-filter: hue-rotate(0deg)}
   to   { -webkit-filter: hue-rotate(360deg)}
-}
+} */
+
