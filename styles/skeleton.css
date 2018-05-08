@@ -21,7 +21,7 @@ body {background: black;
   width: 200px;
   height: 200px;
   -webkit-transform-style: preserve-3d;
-  -webkit-animation: rotation 4s infinite;
+  -webkit-animation: rotation 3.5s infinite;
 }
 
 .layer {

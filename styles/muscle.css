@@ -62,16 +62,34 @@ p {
     margin: 10px;
 }
 
+/* #menu {
+
+} */
+
 .icon-menu {
-    font-size: 30px;
+    font-size: 40px;
     float: right;
 }
+
+form {
+    width: 50%;
+    margin: 0 auto; 
+}
+label {
+    display: block;
+    height: 24px;
+}
+
+label input {
+    float: right;
+}
+
 
 .container {
     width: 196px;
     height: 196px;
     position: relative;
-    /* perspective: 1000px; */
+    /* perspective: 10px; */
   }
   
   #cube {

@@ -25,53 +25,75 @@ var staticAboutMeData = [
 
 var projectData = [
     {
-        title: 'About Me Ipsum',
-        category: 'Fun',
-        author: 'William',
+        cubeObject: '',
+        title: 'First Website',
+        author: 'William Tronvig',
         websiteurl: 'www.something@something.com',
-        publishedOn: '2018-05-3',
-        body: 'something awesome'
+        wentLiveOn: '2018-05-3',
+        projectDescription: 'something awesome'
     },
     {
-        title: 'About Me Ipsum',
-        category: 'Fun',
-        author: 'William',
+        cubeObject: '',
+        title: 'School Project "Couch Potatoes"',
+        author: 'William Tronvig',
         websiteurl: 'www.something@something.com',
-        publishedOn: '2018-05-3',
-        body: 'something awesome'
+        wentLiveOn: '2018-05-3',
+        projectDescription: 'something awesome'
     },
     {
+        cubeObject: '',
         title: 'About Me Ipsum',
-        category: 'Fun',
-        author: 'William',
+        author: 'William Tronvig',
         websiteurl: 'www.something@something.com',
-        publishedOn: '2018-05-3',
-        body: 'something awesome'
+        wentLiveOn: '2018-05-3',
+        projectDescription: 'something awesome'
     },
     {
+        cubeObject: '',
         title: 'About Me Ipsum',
-        category: 'Fun',
-        author: 'William',
+        author: 'William Tronvig',
         websiteurl: 'www.something@something.com',
-        publishedOn: '2018-05-3',
-        body: 'something awesome'
+        wentLiveOn: '2018-05-3',
+        projectDescription: 'something awesome'
     },
     {
+        cubeObject: '',
         title: 'About Me Ipsum',
-        category: 'Fun',
-        author: 'William',
+        author: 'William Tronvig',
         websiteurl: 'www.something@something.com',
-        publishedOn: '2018-05-3',
-        body: 'something awesome'
+        wentLiveOn: '2018-05-3',
+        projectDescription: 'something awesome'
     },
     {
+        cubeObject: '',
         title: 'About Me Ipsum',
-        category: 'Fun',
-        author: 'William',
+        author: 'William Tronvig',
         websiteurl: 'www.something@something.com',
-        publishedOn: '2018-05-3',
-        body: 'something awesome'
+        wentLiveOn: '2018-05-3',
+        projectDescription: 'something awesome'
     },
 ];
 
-
+var blogData = [
+    {
+        topic: 'About Me Ipsum',
+        author: 'William',
+        websiteurl: 'www.something@something.com',
+        writtenOn: '2018-05-3',
+        body: 'Run a manual sweep of anomalous airborne or electromagnetic readings. Radiation levels in our atmosphere have increased by 3,000 percent. Electromagnetic and subspace wave fronts approaching synchronization. What is the strength of the ship\'s deflector shields at maximum output? The wormhole\'s size and short period would make this a local phenomenon. Do you have sufficient data to compile a holographic simulation?'
+    },
+    {
+        topic: 'About Me Ipsum',
+        author: 'William',
+        websiteurl: 'www.something@something.com',
+        writtenOn: '2018-05-3',
+        body: 'Run a manual sweep of anomalous airborne or electromagnetic readings. Radiation levels in our atmosphere have increased by 3,000 percent. Electromagnetic and subspace wave fronts approaching synchronization. What is the strength of the ship\'s deflector shields at maximum output? The wormhole\'s size and short period would make this a local phenomenon. Do you have sufficient data to compile a holographic simulation?'
+    },
+    {
+        topic: 'About Me Ipsum',
+        author: 'William',
+        websiteurl: 'www.something@something.com',
+        writtenOn: '2018-05-3',
+        body: 'Run a manual sweep of anomalous airborne or electromagnetic readings. Radiation levels in our atmosphere have increased by 3,000 percent. Electromagnetic and subspace wave fronts approaching synchronization. What is the strength of the ship\'s deflector shields at maximum output? The wormhole\'s size and short period would make this a local phenomenon. Do you have sufficient data to compile a holographic simulation?'
+    },
+];

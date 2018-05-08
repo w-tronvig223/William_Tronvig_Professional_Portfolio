@@ -9,7 +9,15 @@
 <body>
     <header>
         <nav id="menu">
-            <span class = "icon-menu"></span>
+            <span class = "icon-menu">
+                <ul id="main-menu">
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                    <li>Something</li>
+                </ul>
+            </span>
         </nav>
         <h1 id="slide1">William Tronvig</h1> 
     </header>
@@ -27,36 +35,25 @@
             <h2>Inventor</h2>
         </div>
     </div>
+    <h3 id="slide6">A little info about William...</h3>
     <main>
         <section>
-            <article class="aboutMeTemplate">
-                <h3 id="slide6">A little info about William...</h3>
-                    <h2 class="come-in">History</h2>
-                    <p class="come-in">
-                    </p>
-                    <h2 class="come-in">Goals</h2>
-                    <p class="come-in">
-                    </p>
-                    <h2 class="come-in">Relevant Experience</h2>
-                    <p class="come-in">
-                    </p>
-                    <h2 class="come-in">Interests</h2>
-                    <p class="come-in">
-                    </p>
-                    <h2 class="come-in">Some other stuff..</h2>
-                    <p class="come-in">
-                    </p>
-                    <h2 class="come-in">Some other more stuff..</h2>
-                    <p class="come-in">
-                    </p>
-                    <h2 class="come-in">More of some other stuff..</h2>
-                    <p class="come-in">
-                    </p>
-                    <p>
-                    </p>
+            <article class="aboutMeDataTemplate" data-category="aboutMeData">
+                <header>
+                    <h1>Title</h1>
+                    <p>Body</p>
+                </header>
             </article>
         </section>
         <h2>Past Projects...</h2>
+        <section>
+                <article class="projectDataTemplate" data-category="projectData">
+                    <header>
+                        <h1>Title</h1>
+                        <p>Body</p>
+                    </header>
+                </article>
+            </section>
         <div class="containerholder">
         <section class="container">
             <div id="cube">
@@ -90,6 +87,16 @@
           </div>
         <nav class="contactinfo">
             <h3>Keep in Touch</h3> <!--Add form template as well-->
+            <form>
+                <fieldset>
+                    <legend>Experiemental Form</legend>
+                    <label>Title:</label><input type="text" name="title">
+                    <label>First Name:</label><input type="text" name="first">
+                    <label>Last Name:</label><input type="text" name="last">
+                </fieldset>
+                Article Content: <br>
+                <textarea name="content"></textarea>
+            </form>
             <ul>
               <li><a href="https://github.com/W-Tronvig223" target="_blank">GitHub</a></li>
               <li><a href="https://www.linkedin.com/in/williamtronvig" target="_blank">LinkedIn</a></li>
