@@ -1,0 +1,8 @@
+@media (min-width: 800px){
+    .icon-menu {
+        display: none;
+    }
+    .divholder {
+        display: flex;
+    }
+}
