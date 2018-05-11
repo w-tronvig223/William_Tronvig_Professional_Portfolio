@@ -1,0 +1,58 @@
+html { 
+    background: url(../images/test3.jpg) no-repeat center center fixed; 
+    background-size: cover;
+  } 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#nameheading {
+    margin: 0;
+}
+#subheading {
+    font-size: 18px;
+}
+
+.icon-menu {
+    font-size: 29px;
+}
+
+.icon-menu:hover + #main-menu {
+    display: flex;
+}
+
+#main-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    flex-direction: column;
+}
+
+.contactinfo {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+h3 {
+    text-align: center;
+    margin: 0 auto;
+}
+.contactinfolinks {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+footer {
+    position: fixed;
+    font-family: monospace, 'Courier New', Courier;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}

@@ -1,5 +1,5 @@
 h1 {
-    font-size: 50px;
+    font-size: 25px;
     text-align: left;
     letter-spacing: 5px;
     font-family: monospace, 'Courier New', Courier;
@@ -26,49 +26,8 @@ p {
     font-size: 16px;
 }
 
-#project1 {
-    background-color: rgba(0, 0, 3, 0.071);
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-    margin: 10px;
-}
-#project2 {
-    background-color:rgba(0, 0, 3, 0.071);
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-    margin: 10px;
-}
-#project3 {
-    background-color: rgba(0, 0, 3, 0.071);
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-    margin: 10px;
-}
-#project4 {
-    background-color: rgba(0, 0, 3, 0.071);
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-    margin: 10px;
-}
-#aboutMe{
-    background-color:rgba(0, 0, 3, 0.071);
-    height: 200px;
-    width: 200px;
-    border: 1px solid black;
-    margin: 10px;
-}
-
-/* #menu {
-
-} */
-
 .icon-menu {
     font-size: 40px;
-    float: right;
 }
 
 form {
@@ -84,6 +43,31 @@ label input {
     float: right;
 }
 
+footer {
+    position: fixed;
+    font-family: monospace, 'Courier New', Courier;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align: center;
+    color: black;
+}
+.contactinfo {
+    text-align: center;
+}
+
+#main-menu {
+    display: none;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-bottom: 20px;
+    font-size: 26px;
+    flex-direction: column;
+}
+
+.icon-menu:hover + #main-menu {
+    display: flex;
+}
 
 .container {
     width: 196px;
@@ -134,8 +118,6 @@ label input {
 #cube.show-bottom { transform: translateZ( -50px ) rotateX(   90deg ); }
 
 #cube { transition: transform 1s; }
-
-/*Put this code in here from CSS tricks just to get an idea on my page of what I'm going for.*/
 
 .containerholder {
     display: flex;

@@ -1,6 +1,5 @@
-@import 'skeleton.css';
+@import 'base.css';
 @import 'icons.css';
-@import 'muscle.css';
-@import 'layout.css';
+@import 'style.css';
 @import 'animations.css';
 @import 'desktop.css';
