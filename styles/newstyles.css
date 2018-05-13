@@ -47,7 +47,6 @@ h3 {
 }
 
 footer {
-    position: fixed;
     font-family: monospace, 'Courier New', Courier;
     bottom:0;
     left:0;
