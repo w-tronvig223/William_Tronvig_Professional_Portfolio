@@ -1,0 +1,8 @@
+
+.icon-menu {
+    display: none;
+}
+.divholder {
+    display: flex;
+    flex-grow: inherit;
+}
