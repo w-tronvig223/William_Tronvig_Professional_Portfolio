@@ -14,11 +14,11 @@ header {
     font-size: 18px;
 }
 
-.icon-menu, .icon-cross {
+.icon-menu, .icon-happy2 {
     font-size: 29px;
 }
 
-.icon-cross + #main-menu {
+.icon-happy2 + #main-menu {
 
     max-height: 125px;
 }
@@ -30,7 +30,7 @@ header {
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.5s;
+    transition: all 1.3s;
 }
 
 .contactinfo {
