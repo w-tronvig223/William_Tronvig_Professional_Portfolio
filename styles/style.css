@@ -69,3 +69,6 @@ footer {
     display: flex;
 }
 
+.template {
+    display: none;
+}

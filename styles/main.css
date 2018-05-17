@@ -1,6 +1,5 @@
 /* @import 'cube.css'; */
 @import 'icons.css';
 @import 'mobilestyles.css';
-/* @import 'scroll.css'; */
 /* @import 'animations.css'; */
-@import 'newdesktop.css' (min-width: 380px);
+@import 'desktopstyles.css' (min-width: 380px);
