@@ -12,14 +12,18 @@ function Portfolio(rawDataObj) {
 };
 
 Portfolio.prototype.toHtml = function() {
-    var $newProject = $('.template').clone();
-    $newProject.removeClass('template');    
 
-    if (!this.wentLiveOn) $newProject.addClass('draft');
-    $newProject.data('category', this.category);
+    var template = $('#projects').html();
+    var compile = Handlebars.compile(template);
 
-    $newProject.find('h1').text(this.title);
-    return $newProject;
+    // var $newProject = $('.template').clone();
+    // $newProject.removeClass('template');    
+
+    // if (!this.wentLiveOn) $newProject.addClass('draft');
+    // $newProject.data('category', this.category);
+    $('main').append(compile(this));
+    // $newProject.find('h1').text(this.title);
+    // return $newProject;
 };
 
 projectData.forEach(function(projectObject) {

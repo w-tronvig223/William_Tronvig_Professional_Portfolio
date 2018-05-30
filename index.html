@@ -77,7 +77,7 @@
                 Resistance is futile.
                 </p>
         </section>
-        <section id="projects">
+        <!-- <section id="projects">
             <article class="template" data-category="cat">
               <header>
                 <h1>Title</h1>
@@ -88,7 +88,17 @@
               </header>
               <section class="article-body"></section>
             </article>
-          </section>
+          </section> -->
+
+          <script id="projects" type="text/x-handlebars-template">
+            <article>
+              <h2>Title: {{title}}</h2>
+              <h2>Author: {{author}}</h2>
+              <a href = '{{authorUrl}}'>Author Website</a>
+              <p><time datetime="2000-01-01">{{publishedOn}}</time></p>
+              <p>{{{body}}}</p>
+            </article>
+          </script> 
     </main>
     <nav class="contactinfo">
         <h3>Keep in Touch</h3>
@@ -101,10 +111,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
     <script type="text/javascript" src="javascript/rawdata.js"></script>
     <script type="text/javascript" src="javascript/constructor.js"></script>
     <script type="text/javascript" src="javascript/events.js"></script>
     <script type="text/javascript" src="javascript/scroll.js"></script>
+    
     <footer>&copy; 2018 WT Portfolio</footer>
 </body>
 </html>
