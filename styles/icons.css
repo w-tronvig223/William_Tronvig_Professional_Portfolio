@@ -23,6 +23,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-youtube2:before {
+	content: "\ea93";
+}
+.icon-linkedin:before {
+	content: "\eac9";
+}
 .icon-home:before {
 	content: "\e908";
 }
@@ -68,9 +74,4 @@
 .icon-github:before {
 	content: "\e907";
 }
-.icon-youtube2:before {
-	content: "\ea93";
-}
-.icon-linkedin:before {
-	content: "\eac9";
-}
+
