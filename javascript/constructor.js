@@ -16,7 +16,7 @@ Portfolio.prototype.toHtml = function() {
     var template = $('#projects').html();
     var compile = Handlebars.compile(template);
 
-    // var $newProject = $('.template').clone();
+    // var $newProject = $('.template').clone(); holding onto until end of portfolio assignments, in case I want to revert back to using this. 
     // $newProject.removeClass('template');    
 
     // if (!this.wentLiveOn) $newProject.addClass('draft');
