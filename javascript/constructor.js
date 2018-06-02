@@ -1,6 +1,6 @@
 'use strict';
 
-// var projects = [];
+const portfolioView = {};
 
 function Portfolio(rawDataObj) {
     this.cubeObjectId1 = rawDataObj.cubeObjectId1;
@@ -11,28 +11,41 @@ function Portfolio(rawDataObj) {
     this.projectDescription = rawDataObj.projectDescription;
 }
 
-Portfolio.all [];
+Portfolio.all = [];
 
 Portfolio.prototype.toHtml = function() {
-    let template = Handlebars.compile($('#projects').text());
-    
-    // var template = $('#projects').html(); took out 19 and 20 first
-    // var compile = Handlebars.compile(template);
-
-    // var $newProject = $('.template').clone();
-    // $newProject.removeClass('template');    
-
-    // if (!this.wentLiveOn) $newProject.addClass('draft');
-    // $newProject.data('category', this.category);
-    // $('main').append(compile(this)); took out 27 next
-    // $newProject.find('h1').text(this.title);
-    // return $newProject;
+    const template = $('#projects').html();
+    const compile = Handlebars.compile(template);
+    $('#projects').append(compile(this));
 };
 
-projectData.forEach(function(projectObject) {
-    projects.push(new Portfolio(projectObject));
-});
+Portfolio.initProjects = function() {
+    Portfolio.all.forEach(function(cubesProjects) {
+      $('#projects').append(cubesProjects.toHtml())
+    });
+};
 
-projects.forEach(function(appendProjects){
-    $('#projects').append(appendProjects.toHtml());
-});
+Portfolio.loadAll = function(portfolioData) {
+    portfolioData.forEach(function(giveDataforPortfolio) {
+        Portfolio.all.push(new Portfolio(giveDataforPortfolio));
+    });
+};
+
+portfolioView.fetchAll = function() {
+    if (localStorage.portfolioData) {
+      Portfolio.loadAll(JSON.parse(localStorage.portfolioData)); 
+        Portfolio.initProjects();
+    
+    }  else {
+  
+      $.ajax({
+        type: 'GET',
+        url: '../json/rawdata.json',
+        success: function(portfolioData) {
+            localStorage.setItem('portfolioData', JSON.stringify(portfolioData));
+            Portfolio.loadAll(portfolioData);
+            Portfolio.initProjects();
+            }
+        });
+    }
+};
