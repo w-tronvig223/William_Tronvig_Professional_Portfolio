@@ -1,0 +1,24 @@
+{
+  "name": "william_tronvig_professional_portfolio",
+  "version": "1.0.0",
+  "description": "portfolio json package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w-tronvig223/William_Tronvig_Professional_Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w-tronvig223/William_Tronvig_Professional_Portfolio/issues"
+  },
+  "homepage": "https://github.com/w-tronvig223/William_Tronvig_Professional_Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "npm": "^6.1.0"
+  }
+}
