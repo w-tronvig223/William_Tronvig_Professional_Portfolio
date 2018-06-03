@@ -117,6 +117,16 @@
               <p>{{{body}}}</p>
             </article>
           </script> 
+          <script id="repo-template" type="text/x-handlebars-template">
+            <li>
+              <a href="{{html_url}}" target="_blank">
+                <h3>{{name}}</h3>
+              </a>
+              <h2></h2>
+              <p>Description: {{description}}</p>
+              <p>Created: {{created_at}}</p>
+            </li>
+          </script>
     </main>
     <nav class="contactinfo">
         <h3>Keep in Touch</h3>
@@ -133,17 +143,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
     <script src="javascript/page.js"></script>
 
-    <!-- <script src="javascript/githubToken.js"></script>  -->
+    <script src="javascript/githubToken.js"></script> 
 
     <script type="text/javascript" src="javascript/rawdata.js"></script>
     <script type="text/javascript" src="javascript/constructor.js"></script>
     <script type="text/javascript" src="javascript/events.js"></script>
 
     <script src="javascript/homeController.js"></script>
-    <!-- <script src="javascript/repo.js"></script>  -->
+    <script src="javascript/repo.js"></script> 
     <script src="javascript/aboutController.js"></script>
     <script src="javascript/routes.js"></script>
-    <!-- <script src="javascript/repoView.js"></script>  -->
+    <script src="javascript/repoView.js"></script> 
     <script type="text/javascript" src="javascript/scroll.js"></script>
   
     <script>portfolioView.fetchAll()</script>

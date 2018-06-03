@@ -7,13 +7,13 @@ $('#menu-icon').on('click', function() {
 });
 
 
-$(".icon-home").on('click', function() {
-    $('#aboutme').hide();
-    $('#home').show();
-});
+// $(".icon-home").on('click', function() {
+//     $('#aboutme').hide();
+//     $('#home').show();
+// });
 
 
-$(".icon-address-book").on('click', function() {
-    $('#home').hide();
-    $('#aboutme').show();
-});
+// $(".icon-address-book").on('click', function() {
+//     $('#home').hide();
+//     $('#aboutme').show();
+// });
