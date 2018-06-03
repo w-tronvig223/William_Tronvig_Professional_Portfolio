@@ -14,9 +14,9 @@ function Portfolio(rawDataObj) {
 Portfolio.all = [];
 
 Portfolio.prototype.toHtml = function() {
-    const template = $('#projects').html();
+    const template = $('#projects-template').html();
     const compile = Handlebars.compile(template);
-    $('#projects').append(compile(this));
+    return compile(this);
 };
 
 Portfolio.initProjects = function() {

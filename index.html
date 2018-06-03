@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>William Tronvig Professional Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script id="projects-template" type="text/x-handlebars-template">
+        <article>
+          <h2>Title: {{title}}</h2>
+          <h2>Author: {{author}}</h2>
+          <a href = '{{authorUrl}}'>Author Website</a>
+          <p><time datetime="2000-01-01">{{publishedOn}}</time></p>
+          <p>{{{body}}}</p>
+        </article>
+      </script> 
 </head>
 <body>
     <header>
@@ -77,15 +86,7 @@
                 Resistance is futile.
                 </p>
             </section>
-          <script id="projects" type="text/x-handlebars-template">
-            <article>
-              <h2>Title: {{title}}</h2>
-              <h2>Author: {{author}}</h2>
-              <a href = '{{authorUrl}}'>Author Website</a>
-              <p><time datetime="2000-01-01">{{publishedOn}}</time></p>
-              <p>{{{body}}}</p>
-            </article>
-          </script> 
+            <section id="projects"></section>
     </main>
     <nav class="contactinfo">
         <h3>Keep in Touch</h3>
