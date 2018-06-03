@@ -4,7 +4,7 @@
   const repoView = {};
 
   const ui = function() {
-    let $about = $('#about'); 
+    let $about = $('#aboutme'); 
 
     $about.find('ul').empty();
     $about.show().siblings().hide();
@@ -18,6 +18,5 @@
       repos.with('name').map(render) 
     );
   };
-
   module.repoView = repoView;
 })(window);
