@@ -1,6 +1,6 @@
-#slide1 {
+.slide1 {
     position: relative;
-    padding: 20px;
+    /* padding: 20px; */
     left: -2000px;
     -webkit-animation: slide 0.5s forwards;
     -webkit-animation-delay: 2s;
@@ -15,10 +15,10 @@
 @keyframes slide {
     100% { left: 0; }
 }
-#slide2 {
+.slide2 {
     position: relative;
     margin-left: 0;
-    padding: 20px;
+    /* padding: 20px; */
     left: -2000px;
     -webkit-animation: slide 0.5s forwards;
     -webkit-animation-delay: 2s;

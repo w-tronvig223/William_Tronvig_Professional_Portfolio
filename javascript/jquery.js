@@ -57,5 +57,4 @@ win.scroll(function(event) {
       el.addClass("come-in"); 
     } 
   });
-  
 });

@@ -8,13 +8,13 @@
 </head>
 <body>
     <header>
-        <h1 id="nameheading">William Tronvig</h1> 
-        <h2 id="subheading">Entrepreneur | Student | Developer | Inventor</h2>
+        <h1 id="nameheading" class="slide1">William Tronvig</h1> 
+        <h2 id="subheading" class="slide2">Entrepreneur | Student | Developer | Inventor</h2>
     </header>
     <nav id="menu">
         <ul>
             <li><class="tab" data-content="projects"><a href="/" class="icon-home">Home</a></li>
-            <li><class="tab" data-content="projects"><a href="/" class="icon-address-book">About</a></li>
+            <li><class="tab" data-content="projects"><a href="/aboutme" class="icon-address-book">About</a></li>
         </ul>
         <span id ="menu-icon" class ="icon-menu"></span>
         <ul id="main-menu">
@@ -49,7 +49,7 @@
                 </p> 
         </section>
         <section id="aboutme">
-            <p>
+                <p>
                 These are the voyages of the Starship Enterprise. Its continuing mission, to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no one has gone before. We need to neutralize the homing signal. Each unit has total environmental control, gravity, temperature, atmosphere, light, in a protective field. Sensors show energy readings in your area. We had a forced chamber explosion in the resonator coil. Field strength has increased by 3,000 percent.
                 </p>
                 
@@ -77,6 +77,37 @@
                 Resistance is futile.
                 </p>
             </section>
+            <div class="containerholder">
+                <section class="container">
+                    <div id="cube">
+                      <figure class="front"></figure>
+                      <figure class="back"></figure>
+                      <figure class="right"></figure>
+                      <figure class="left"></figure>
+                      <figure class="top"></figure>
+                      <figure class="bottom"></figure>
+                    </div>
+                  </section>
+                  <section class="container">
+                    <div id="cube">
+                      <figure class="front"></figure>
+                      <figure class="back"></figure>
+                      <figure class="right"></figure>
+                      <figure class="left"></figure>
+                      <figure class="top"></figure>
+                      <figure class="bottom"></figure>
+                    </div>
+                  </section>
+                  <section class="container">
+                    <div id="cube">
+                      <figure class="front"></figure>
+                      <figure class="back"></figure>
+                      <figure class="right"></figure>
+                      <figure class="left"></figure>
+                      <figure class="top"></figure>
+                      <figure class="bottom"></figure>
+                    </div>
+                  </div>
           <script id="projects" type="text/x-handlebars-template">
             <article>
               <h2>Title: {{title}}</h2>
@@ -95,19 +126,24 @@
             <li><a href="https://www.youtube.com/channel/UCHF1eS5u9kmkmB9FqTE25fg?view_as=subscriber" target="_blank" class="icon-youtube2">YouTube</a></li>
         </ul>
     </nav>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
-    <!-- <script>src="https://cdnjs.cloudflare.com/ajax/libs/page.js/1.8.6/page.min.js"</script> -->
     <script src="javascript/page.js"></script>
+
+    <!-- <script src="javascript/githubToken.js"></script>  -->
+
     <script type="text/javascript" src="javascript/rawdata.js"></script>
     <script type="text/javascript" src="javascript/constructor.js"></script>
     <script type="text/javascript" src="javascript/events.js"></script>
+
     <script src="javascript/homeController.js"></script>
+    <!-- <script src="javascript/repo.js"></script>  -->
     <script src="javascript/aboutController.js"></script>
     <script src="javascript/routes.js"></script>
+    <!-- <script src="javascript/repoView.js"></script>  -->
     <script type="text/javascript" src="javascript/scroll.js"></script>
   
     <script>portfolioView.fetchAll()</script>
