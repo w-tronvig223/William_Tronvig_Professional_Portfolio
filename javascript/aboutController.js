@@ -4,8 +4,8 @@
   const aboutController = {};
   aboutController.initProjects = () =>  {
       $('#home').hide();
+      $('#cube-projects').hide();
       $('#aboutme').fadeIn();
-      repos.requestRepos(repoView.index);
   }
   module.aboutController = aboutController;
 })(window);

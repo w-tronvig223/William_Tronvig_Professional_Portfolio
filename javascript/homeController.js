@@ -4,6 +4,7 @@
   const homeController = {};
   homeController.initProjects = () =>  {
       $('#aboutme').hide();
+      $('#cube-projects').hide();
       $('#home').fadeIn();
   }
   module.homeController = homeController;

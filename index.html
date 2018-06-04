@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>William Tronvig Professional Portfolio</title>
     <link rel="stylesheet" href="styles/main.css">
-    <script id="projects" type="text/x-handlebars-template">
+    <script id="projects-template" type="text/x-handlebars-template">
         <article>
           <h2>Title: {{title}}</h2>
           <h2>Author: {{author}}</h2>
@@ -34,6 +34,7 @@
         <ul>
             <li><class="tab" data-content="projects"><a href="/" class="icon-home">Home</a></li>
             <li><class="tab" data-content="projects"><a href="/aboutme" class="icon-address-book">About</a></li>
+            <li><class="tab" data-content="cube-projects"><a href="/cube-projects" class="icon-cross"></a></li>
         </ul>
         <span id ="menu-icon" class ="icon-menu"></span>
         <ul id="main-menu">
@@ -127,7 +128,7 @@
                       <figure class="bottom"></figure>
                     </div>
                   </div>
-          <section id="projects">
+          <section id="cube-projects">
               <ul></ul>
           </section>
     </main>
@@ -145,20 +146,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
     <script src="javascript/page.js"></script>
-
-    <script src="javascript/githubToken.js"></script> 
-
+    <script src="javascript/githubToken.js"></script>
     <script type="text/javascript" src="javascript/rawdata.js"></script>
     <script type="text/javascript" src="javascript/constructor.js"></script>
     <script type="text/javascript" src="javascript/events.js"></script>
-
-    <script src="javascript/homeController.js"></script>
-    <script src="javascript/repo.js"></script> 
-    <script src="javascript/aboutController.js"></script>
-    <script src="javascript/routes.js"></script>
     <script src="javascript/repoView.js"></script> 
+    <script src="javascript/homeController.js"></script>
+    <script src="javascript/aboutController.js"></script>
+    <script src="javascript/cubeController.js"></script>
+    <script src="javascript/repo.js"></script> 
+    <script src="javascript/routes.js"></script>
     <script type="text/javascript" src="javascript/scroll.js"></script>
-  
+
     <script>portfolioView.fetchAll()</script>
 
     <footer>&copy; 2018 WT Portfolio</footer>
